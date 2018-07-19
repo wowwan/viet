@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/readable/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-
-
-
-
+    <link rel="stylesheet" href="public/theme/css/themes/t-datepicker-yellow.css">
+    <link rel="stylesheet" href="public/theme/css/t-datepicker.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="ext_libs/country_picker/js/countrypicker.js"></script>
+    <script src="public/theme/js/t-datepicker.js"></script>
+
 
 
 </head>
@@ -25,5 +25,21 @@
         data-default="United States"
         data-flag="true">
 </select>
+
+<div class="t-datepicker">
+    <div class="t-check-in"></div>
+    <div class="t-check-out"></div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.t-datepicker').tDatePicker({
+            // options here
+        });
+    });
+</script>
+
+
+
 </body>
 </html>
